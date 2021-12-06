@@ -13,16 +13,17 @@ If this is a new system, ensure that Python 3.7 is set to prevent conflicts:
 pyenv install 3.7.5
 pyenv global 3.7.5
 
-Whenever the pyproject updated need to update the portry.
-`
-poetry install  # one time
-poetry update
-`
 
 ### Install poetry:
 Run below command and follow directions from output
 
 `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_VERSION=1.0.10 python` 
+
+Whenever the pyproject updated need to update the portry.
+`
+poetry install  # one time
+poetry update
+`
 
 ### Install Sqlite
 
@@ -46,14 +47,16 @@ The result will be (17.7m~):
 
 ### Data Dictionary
 
-- **nr_cnpj**: TEXT: Company’s registration ID (Used as a string, so that leading 0 will not trim.)
-- **nm_fantasia**: TEXT: Company’s name
-- **sg_uf**: TEXT: Company Location
-- **in_cpf_cnpj**: INTEGER: business partner -> Company (1) or a Person (2)
-- **nr_cpf_cpnj_socio**: INTEGER:  Business partner registration ID
-- **cd_qualificacao_socio**: INTEGER: business partner role
-- **ds_qualificacao_socio**: TEXT: Description of the business partner role
-- **nm_socio**: TEXT: operator / administrator name
+| Field Name | DataType | Description |
+| --- | ----------- |-----------------
+|nr_cnpj|TEXT|Company’s registration ID (Used as a string, so that leading 0 will not trim.)|
+|nm_fantasia|TEXT|Company’s name|
+|sg_uf|TEXT|Company Location|
+|in_cpf_cnpj|INTEGER|business partner -> Company (1) or a Person (2)|
+|nr_cpf_cpnj_socio|INTEGER|Business partner registration ID|
+|cd_qualificacao_socio|INTEGER|business partner role|
+|ds_qualificacao_socio|TEXT|Description of the business partner role|
+|nm_socio|TEXT|operator / administrator name|
 
 
 ## Run the application
@@ -64,7 +67,7 @@ To run the API Locally, here is the command:
 
 Hit the API using web browser or Postman.
 
-Examle to hit the API:
+Example to access Endpoints:
 
 `
 http://localhost:8000/api/v1/app/operators/?company_id='17207979000176'
@@ -74,7 +77,7 @@ http://localhost:8000/api/v1/app/companies/?operator='CHIANG DE GOMES'
 
 
 ## Swagger UI
-For API documentation use swagger UI with below URI:
+For API documentation swagger UI can be accessed with below URI:
 
 `http://localhost:8000/docs`
 
