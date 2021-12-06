@@ -44,6 +44,18 @@ It will take few min to min all the data. Run below query to confirm the load.
 The result will be (17.7m~):
 `17,780,860`
 
+### Data Dictionary
+
+. **nr_cnpj**: TEXT: Company’s registration ID (Used as a string, so that leading 0 will not trim.)
+. **nm_fantasia**: TEXT: Company’s name
+. **sg_uf**: TEXT: Company Location
+. **in_cpf_cnpj**: INTEGER: business partner -> Company (1) or a Person (2)
+. **nr_cpf_cpnj_socio**: INTEGER:  Business partner registration ID
+. **cd_qualificacao_socio**: INTEGER: business partner role
+. **ds_qualificacao_socio**: TEXT: Description of the business partner role
+. **nm_socio**: TEXT: operator / administrator name
+
+
 ## Run API
 
 To run the API Locally, here is the command:
@@ -52,10 +64,20 @@ To run the API Locally, here is the command:
 
 Hit the API using web browser or Postman.
 
+Examle to hit the API:
+
+`
+http://localhost:8000/operators/?company_id='17207979000176'
+http://localhost:8000/shared_companies/?company_id='36863652000105'
+http://localhost:8000/companies/?operator='CHIANG DE GOMES'
+`
+
+
 ## Swagger UI
 For API documentation use swagger UI with below URI:
 
 `http://localhost:8000/docs`
 
+## High level Architecture to implement in AWS Cloud
 
 ![The cloud Architecture of the API](/atlas-api/docs/cloud.jpg "Text to show on mouseover")
