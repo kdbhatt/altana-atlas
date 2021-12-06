@@ -56,20 +56,20 @@ The result will be (17.7m~):
 - **nm_socio**: TEXT: operator / administrator name
 
 
-## Run API
+## Run the application
 
 To run the API Locally, here is the command:
 
-`uvicorn main:app --reload`
+`uvicorn atlas_api.main:app --reload`
 
 Hit the API using web browser or Postman.
 
 Examle to hit the API:
 
 `
-http://localhost:8000/operators/?company_id='17207979000176'
-http://localhost:8000/shared_companies/?company_id='36863652000105'
-http://localhost:8000/companies/?operator='CHIANG DE GOMES'
+http://localhost:8000/api/v1/app/operators/?company_id='17207979000176'
+http://localhost:8000/api/v1/app/shared_companies/?company_id='36863652000105'
+http://localhost:8000/api/v1/app/companies/?operator='CHIANG DE GOMES'
 `
 
 
@@ -80,4 +80,5 @@ For API documentation use swagger UI with below URI:
 
 ## High level Architecture to implement in AWS Cloud
 
-![The cloud Architecture of the API](/atlas-api/docs/cloud.jpg "Text to show on mouseover")
+![The cloud Architecture of the API](/docs/cloud.jpg "Text to show on mouseover")
+
