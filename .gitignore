@@ -1,5 +1,7 @@
 *.csv
 *.sqlite
-atlas-api/.idea
+.idea
 .DS_Store
 select
+__pycache__
+*.iml

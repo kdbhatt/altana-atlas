@@ -1,22 +1,11 @@
-from fastapi import FastAPI
-from databases import Database
+from fastapi import APIRouter
 
-app = FastAPI()
+from atlas_app.service.db import database
 
-database = Database("sqlite:///atlas_db.sqlite")
-
-
-@app.on_event("startup")
-async def database_connect():
-    await database.connect()
+router = APIRouter()
 
 
-@app.on_event("shutdown")
-async def database_disconnect():
-    await database.disconnect()
-
-
-@app.get('/operators')
+@router.get('/operators')
 async def get_all_operators(company_id: str):
     """
     All operators associated with a given company
@@ -32,7 +21,7 @@ async def get_all_operators(company_id: str):
     return operators
 
 
-@app.get('/companies')
+@router.get('/companies')
 async def get_all_operators(operator: str):
     """
     All companies associated with a given operator
@@ -48,7 +37,7 @@ async def get_all_operators(operator: str):
     return companies
 
 
-@app.get('/shared_companies')
+@router.get('/shared_companies')
 async def get_all_operators(company_id: str):
     """
     All companies connected to a given company via shared operators
