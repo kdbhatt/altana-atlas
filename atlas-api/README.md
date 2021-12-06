@@ -58,4 +58,4 @@ For API documentation use swagger UI with below URI:
 `http://localhost:8000/docs`
 
 
-![The cloud Architecture of the API](/docs/cloud.jpg "Text to show on mouseover")
+![The cloud Architecture of the API](/altana-atlas/atlas-api/docs/cloud.jpg "Text to show on mouseover")
