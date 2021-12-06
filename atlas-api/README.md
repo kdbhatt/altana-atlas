@@ -46,14 +46,14 @@ The result will be (17.7m~):
 
 ### Data Dictionary
 
-. **nr_cnpj**: TEXT: Company’s registration ID (Used as a string, so that leading 0 will not trim.)
-. **nm_fantasia**: TEXT: Company’s name
-. **sg_uf**: TEXT: Company Location
-. **in_cpf_cnpj**: INTEGER: business partner -> Company (1) or a Person (2)
-. **nr_cpf_cpnj_socio**: INTEGER:  Business partner registration ID
-. **cd_qualificacao_socio**: INTEGER: business partner role
-. **ds_qualificacao_socio**: TEXT: Description of the business partner role
-. **nm_socio**: TEXT: operator / administrator name
+- **nr_cnpj**: TEXT: Company’s registration ID (Used as a string, so that leading 0 will not trim.)
+- **nm_fantasia**: TEXT: Company’s name
+- **sg_uf**: TEXT: Company Location
+- **in_cpf_cnpj**: INTEGER: business partner -> Company (1) or a Person (2)
+- **nr_cpf_cpnj_socio**: INTEGER:  Business partner registration ID
+- **cd_qualificacao_socio**: INTEGER: business partner role
+- **ds_qualificacao_socio**: TEXT: Description of the business partner role
+- **nm_socio**: TEXT: operator / administrator name
 
 
 ## Run API
