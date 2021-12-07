@@ -81,7 +81,16 @@ For API documentation swagger UI can be accessed with below URI:
 
 `http://localhost:8000/docs`
 
+## Future work
+- The folder structure is ceate so that we can add unit test by using pytest.
+- Model can be used to get request and send request so that response model can be managed.
+
+## System Design
+
+![The cloud Architecture of the API](/docs/Current_Architecture.jpg "Proposed architecture")
+
+
 ## High level Architecture to implement in AWS Cloud
 
-![The cloud Architecture of the API](/docs/cloud.jpg "Text to show on mouseover")
+![The cloud Architecture of the API](/docs/cloud.jpg "Proposed architecture")
 
