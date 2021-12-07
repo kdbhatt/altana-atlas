@@ -5,12 +5,12 @@ This project is a collection of APIs that make up the Atlas API.
 ## Prerequisites
 There are a few prerequisites to running this code:
 
-Python 3.7+
-Pip3
+Python 3.7+\
+Pip3\
 pyenv and poetry
 
-If this is a new system, ensure that Python 3.7 is set to prevent conflicts:
-pyenv install 3.7.5
+If this is a new system, ensure that Python 3.7 is set to prevent conflicts:\
+pyenv install 3.7.5\
 pyenv global 3.7.5
 
 
@@ -19,10 +19,9 @@ Run below command and follow directions from output
 
 `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_VERSION=1.0.10 python` 
 
-Whenever the pyproject updated need to update the portry.
-`
-poetry install  # one time
-poetry update
+Whenever the pyproject updated need to update the portry.\
+`poetry install  # one time`\
+`poetry update
 `
 
 ### Install Sqlite
@@ -36,13 +35,15 @@ Just need to do is to open a terminal and run the below command:
 ## Import Data file
 
 The raw data will be stored into the Sqlite data store. To import the raw data need to run below comamnd.
-
-`cd ~/atlas
-sh db_import.sh`
+\
+`cd ~/atlas` \
+`sh db_import.sh` 
 
 It will take few min to min all the data. Run below query to confirm the load.
+
 `select count(*) from ReceitaFederal_QuadroSocietario;`
-The result will be (17.7m~):
+
+The result will be (17.7m~):\
 `17,780,860`
 
 ### Data Dictionary
@@ -81,16 +82,17 @@ For API documentation swagger UI can be accessed with below URI:
 
 `http://localhost:8000/docs`
 
-## Future work
-- The folder structure is ceate so that we can add unit test by using pytest.
-- Model can be used to get request and send request so that response model can be managed.
-
 ## System Design
 
 ![The cloud Architecture of the API](/docs/Current_Architecture.jpg "Proposed architecture")
 
 
-## High level Architecture to implement in AWS Cloud
+## Future work
+- The folder structure is created so that we can add unit test by using pytest.
+- Model can be used by using `Pydentic` to get request and send request, so that response model can be managed.
+
+
+## High level Architecture to implement in AWS Cloud (**Proposed**)
 
 ![The cloud Architecture of the API](/docs/cloud.jpg "Proposed architecture")
 
