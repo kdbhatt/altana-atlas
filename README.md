@@ -45,10 +45,11 @@ The raw data will be stored into the Sqlite data store. To import the raw data n
 
 It will take few min to load all the data. Run below query to confirm the load.
 
-`select count(*) from ReceitaFederal_QuadroSocietario;`
+`select count(*) from ReceitaFederal_QuadroSocietario;`\
+`17,780,860 Records`
 
-The result will be (17.7m~):\
-`17,780,860`
+The result will be (17.7m~) Records.
+
 
 ### Data Dictionary
 

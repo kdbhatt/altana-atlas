@@ -30,7 +30,7 @@ async def get_all_operators(operator: str):
     """
     query = f"SELECT nm_fantasia FROM ReceitaFederal_QuadroSocietario where [nm_socio]= {operator}"
     results = await database.fetch_all(query=query)
-    # companies = []
+    companies = []
     for result in results:
         companies.append(result['nm_fantasia'])
 

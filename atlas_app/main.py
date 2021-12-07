@@ -4,15 +4,15 @@ from atlas_app.api.v1.api import router
 from atlas_app.service.db import database
 
 app = FastAPI(
-    title="Quest-Helper-API",
+    title="Altana-Atlas-API",
     version="1.0",
-    description="Quest Helper APi on FastAPI",
+    description="Altana Atlas APi on FastAPI",
 )
 
 
 @app.get("/")
 async def root():
-    return {"message`": "This is Quest Helper App!"}
+    return {"message`": "This is Altana Atlas App!"}
 
 
 @app.on_event("startup")
