@@ -87,9 +87,9 @@ For API documentation swagger UI can be accessed with below URI:
 
 `http://localhost:8000/docs`
 
-## System Design
+## Architecture of the system
 
-![The cloud Architecture of the API](/docs/Current_Architecture.jpg "Proposed architecture")
+![System Design](/docs/Current_Architecture.jpg "architecture")
 
 
 ## Future work
@@ -101,3 +101,10 @@ For API documentation swagger UI can be accessed with below URI:
 
 ![The cloud Architecture of the API](/docs/cloud.jpg "Proposed architecture")
 
+
+## Design Notes:
+
+AWS Lambda can be used to monitor the S3 bucket.\
+One the file lands into S3 Lambda will call Glue job and which load data into RDS.\
+AWS API Gateway can be used to for API deployment.\
+Lambda will pull the data from RDS and send to user who calling APIs.\
