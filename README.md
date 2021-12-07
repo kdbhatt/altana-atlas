@@ -5,14 +5,15 @@ This project is a collection of APIs that make up the Atlas API.
 ## Prerequisites
 There are a few prerequisites to running this code:
 
-Python 3.7+\
-Pip3\
-pyenv and poetry
+`Python 3.7+`\
+`Pip3`\
+`pyenv and poetry`
+
 
 If this is a new system, ensure that Python 3.7 is set to prevent conflicts:\
-pyenv install 3.7.5\
-pyenv global 3.7.5
 
+`pyenv install 3.7.5` \
+`pyenv global 3.7.5`
 
 ### Install poetry:
 Run below command and follow directions from output
@@ -31,7 +32,10 @@ Just need to do is to open a terminal and run the below command:
 
 `sqlite3`
 
+For widows need to install `sqlite3`. Follow below link to install it.
 
+`https://www.sqlitetutorial.net/download-install-sqlite/
+`
 ## Import Data file
 
 The raw data will be stored into the Sqlite data store. To import the raw data need to run below comamnd.
@@ -39,7 +43,7 @@ The raw data will be stored into the Sqlite data store. To import the raw data n
 `cd ~/atlas` \
 `sh db_import.sh` 
 
-It will take few min to min all the data. Run below query to confirm the load.
+It will take few min to load all the data. Run below query to confirm the load.
 
 `select count(*) from ReceitaFederal_QuadroSocietario;`
 
