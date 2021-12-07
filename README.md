@@ -107,4 +107,4 @@ For API documentation swagger UI can be accessed with below URI:
 AWS Lambda can be used to monitor the S3 bucket.\
 One the file lands into S3 Lambda will call Glue job and which load data into RDS.\
 AWS API Gateway can be used to for API deployment.\
-Lambda will pull the data from RDS and send to user who calling APIs.\
+Lambda will pull the data from RDS and send to user who calling APIs.
